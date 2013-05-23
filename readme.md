@@ -14,7 +14,7 @@ This plugin will show you what post meta is attached to the main post.
 
 ## Screenshots
 
-![Post Meta Sample](screnshot-1.png "Post Meta Sample")
+![Post Meta Sample](https://raw.github.com/whyisjake/Debug-Bar-Post-Meta/master/screenshot-1.png "Post Meta Sample")
 
 ## Changelog
 
