@@ -13,10 +13,9 @@ This plugin will show you what post meta is attached to the main post.
 
 == Installation ==
 
-e.g.
-
 1. Download and activate the Debug Bar plugin
-2. Download and activate the Debug Bar Template Trace plugin
+2. Download and activate the Debug Bar Post Meta plugin
+3. ...Profit?
 
 == Screenshots ==
 
