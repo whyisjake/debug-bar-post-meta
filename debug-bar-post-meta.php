@@ -1,11 +1,11 @@
 <?php
 /*
- Plugin Name:Debug Bar Post Meta
- Plugin URI:http://wordpress.org/extend/plugins/debug-bar-template-trace/
- Description:Displays all of the post meta for a post.
- Author:whyisjake
- Version:0.6
- Author URI: http://www.jakespurlock.com/
+Plugin Name:Debug Bar Post Meta
+Plugin URI:http://wordpress.org/extend/plugins/debug-bar-template-trace/
+Description:Displays all of the post meta for a post.
+Author:whyisjake
+Version:0.6
+Author URI: http://www.jakespurlock.com/
  */
 
 
