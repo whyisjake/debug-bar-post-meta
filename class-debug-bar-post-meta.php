@@ -16,9 +16,9 @@ class Debug_Bar_Post_Meta extends Debug_Bar_Panel {
 			$vals = '';
 			foreach ($values as $value) {
 				if ( ( is_serialized( $value ) )  !== false) {
-					$vals .= '<pre>' . print_r( unserialize( $value ), true ) . '</pre>';
+					$vals .= '<pre><code>' . print_r( unserialize( $value ), true ) . '</code></pre>';
 				} else {
-					$vals .= '<pre>' . print_r( $value, true ) . "</pre>\n";	
+					$vals .= '<pre><code>' . print_r( $value, true ) . "</code></pre>\n";	
 				}
 				
 			}
