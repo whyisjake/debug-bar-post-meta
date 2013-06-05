@@ -2,8 +2,8 @@
 Contributors: whyisjake
 Tags: debug, template, trace
 Requires at least: 3.3
-Tested up to: 3.3.1
-Stable tag: 0.5.3
+Tested up to: 3.6-beta3
+Stable tag: 0.5.4
 
 Adds a post meta panel for displaying all of the post meta.
 
