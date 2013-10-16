@@ -2,7 +2,7 @@
 
 class Debug_Bar_Post_Meta extends Debug_Bar_Panel {
 	function init() {
-		$this->title( __('Post Meta', 'debug-bar') );
+		$this->title( __( 'Post Meta', 'debug-bar' ) );
 	}
 
 	function render() {
@@ -14,15 +14,15 @@ class Debug_Bar_Post_Meta extends Debug_Bar_Panel {
 			$output .= '<tr>';
 			$output .= '<td>' . $key . '</td>';
 			$vals = '';
-			foreach ($values as $value) {
-				if ( ( is_serialized( $value ) )  !== false) {
-					$vals .= '<pre><code>' . print_r( unserialize( $value ), true ) . '</code></pre>';
+			foreach ( $values as $value ) {
+				if ( ( is_serialized( $value ) )  !== false ) {
+					$vals .= print_r( unserialize( $value ), true );
 				} else {
-					$vals .= '<pre><code>' . print_r( $value, true ) . "</code></pre>\n";	
+					$vals .= print_r( $value, true ) . "\n";
 				}
-				
+
 			}
-			$output .= '<td>' . $vals . '</td>';
+			$output .= '<td><pre><code>' . esc_attr ( $vals ) . '</code></pre></td>';
 			$output .= '</tr>';
 		}
 		$output .= '</table>';
