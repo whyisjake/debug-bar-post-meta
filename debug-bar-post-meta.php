@@ -16,5 +16,3 @@ function debug_bar_post_meta( $panels ) {
 	$panels[] = new Debug_Bar_Post_Meta();
 	return $panels;
 }
-
-?>

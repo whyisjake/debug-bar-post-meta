@@ -1,9 +1,8 @@
-=== Plugin Name ===
+=== Debug Bar Post Meta ===
 Contributors: whyisjake
 Tags: debug, template, trace
-Requires at least: 3.3
-Tested up to: 3.6-beta3
-Stable tag: 0.5.4
+Requires at least: 3.4
+Tested up to: 4.9.8
 
 Adds a post meta panel for displaying all of the post meta.
 
@@ -23,7 +22,7 @@ This plugin will show you what post meta is attached to the main post.
 
 == Changelog ==
 
-= 0.5 = 
+= 0.5 =
 * Let's get this going...
 
 = 0.5 =
