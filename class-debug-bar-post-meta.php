@@ -1,47 +1,84 @@
 <?php
+/**
+ * Debug Bar Post Meta
+ *
+ * @package debug-bar-post-meta
+ */
 
+/**
+ * Debug Bar Post Meta
+ */
 class Debug_Bar_Post_Meta extends Debug_Bar_Panel {
-	function init() {
+
+	/**
+	 * Used the for the enqueue method.
+	 *
+	 * @var string
+	 */
+	private $version = '0.5.5';
+
+	/**
+	 * Kick off the panel.
+	 *
+	 * @return void
+	 */
+	public function init() {
 		$this->title( 'Post Meta' );
 		$this->enqueue();
 	}
 
-	function render() {
+	/**
+	 * Render the panel
+	 *
+	 * @return void
+	 */
+	public function render() {
 		global $wp_query;
 
-		if( !empty( $wp_query->posts ) ){
-		// get post meta form all posts
+		$screen = get_current_screen();
+
+		// We might not have post a post here, so let's get the GET var, and bring the post in.
+		if ( 'edit.php' === $screen->parent_file && null === $wp_query->posts ) {
+			$wp_query->posts = ( ! empty( $_GET['post'] ) ) ? [ get_post( intval( $_GET['post'] ) ) ] : 0;
+		}
+
+		if ( ! empty( $wp_query->posts ) ) {
+			// Get post meta form all posts.
 			$output = "<div class='template-trace' id='debug-bar-post-meta'>";
-			foreach( $wp_query->posts as $single_post ){
-				$output .= "<h3 style=''>".$single_post->post_title."</h3>";
-				$metas = get_post_meta( $single_post->ID );
+			foreach ( $wp_query->posts as $single_post ) {
+				$output .= sprintf( '<h3>%s</h3>', esc_html( $single_post->post_title ) );
+				$metas   = get_post_meta( $single_post->ID );
 				$output .= '<table>';
 				foreach ( $metas as $key => $values ) {
 					$output .= '<tr>';
 					$output .= '<td>' . $key . '</td>';
-					$vals = '';
-					foreach ( $values as $value ):
-						if ( ( is_serialized( $value ) )  !== false ) {
+					$vals    = '';
+					foreach ( $values as $value ) {
+						if ( ( is_serialized( $value ) ) !== false ) {
 							$vals .= print_r( unserialize( $value ), true );
 						} else {
-						$vals .= print_r( $value, true );
-					}
-					endforeach;
+							$vals .= print_r( $value, true );
+						}
+					};
 
-					$output .= '<td><pre><code>' . esc_attr( $vals ) . '</code></pre></td>';
+					$output .= sprintf( '<td><pre><code>%s</code></pre></td>', htmlentities( $vals ) );
 					$output .= '</tr>';
 				}
 				$output .= '</table>';
 			}
-			$output .= "</div>";
-		}else{
-			$output = "Their are no post/page meta for this url";
+			$output .= '</div>';
+		} else {
+			$output = 'There is no post/page meta for this url';
 		}
-		echo $output;
+		echo wp_kses_post( $output );
 	}
 
-
-	function enqueue() {
-		wp_enqueue_style( 'debug-bar-post-meta-css', plugins_url( 'css/debug-bar-post-meta.css', __FILE__ ) );
+	/**
+	 * Enquueueue the css.
+	 *
+	 * @return void
+	 */
+	public function enqueue() {
+		wp_enqueue_style( 'debug-bar-post-meta-css', plugins_url( 'css/debug-bar-post-meta.css', __FILE__ ), [], $this->version );
 	}
 }

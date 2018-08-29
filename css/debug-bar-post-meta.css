@@ -1,8 +1,8 @@
 #debug-bar-post-meta h3 {
-border-bottom: 3px double gray;
-font-size: 14px;
-padding-bottom: 5px;
-font-weight: bold;
+	border-bottom: 3px double gray;
+	font-size: 14px;
+	padding-bottom: 5px;
+	font-weight: bold;
 }
 #debug-bar-post-meta table{
 	margin-bottom: 20px;

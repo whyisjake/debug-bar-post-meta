@@ -22,8 +22,8 @@ This plugin will show you what post meta is attached to the main post.
 
 == Changelog ==
 
-= 0.5 =
-* Let's get this going...
+= 0.5.5 =
+Lot's of updates, props to @cfoellmann. Few small refactors.
 
 = 0.5 =
 * Initial version
