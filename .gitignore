@@ -1,3 +1,4 @@
 .DS_Store
 .SVN
 /vendor/
+/node_modules/
