@@ -1,10 +1,10 @@
 {
   "name": "debug-bar-post-meta",
-  "version": "0.5.6",
+  "version": "0.5.7",
   "description": "Adds a post meta panel for displaying all of the post meta.",
   "main": "index.js",
   "dependencies": {
-    "grunt": "^0.4.1",
+    "grunt": "^1.3.0",
     "grunt-wp-readme-to-markdown": "^2.0.1"
   },
   "devDependencies": {},

@@ -27,3 +27,6 @@ This plugin will show you what post meta is attached to the main post.
 
 = 0.5.6 =
 * Code update, overhaul.
+
+= 0.5.7 =
+* Add a script handler for Grunt.
