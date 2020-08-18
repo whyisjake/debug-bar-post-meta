@@ -1,0 +1,24 @@
+{
+  "name": "debug-bar-post-meta",
+  "version": "0.5.5",
+  "description": "Adds a post meta panel for displaying all of the post meta.",
+  "main": "index.js",
+  "dependencies": {
+    "grunt": "^0.4.1",
+    "grunt-wp-readme-to-markdown": "^2.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/whyisjake/debug-bar-post-meta.git"
+  },
+  "author": "Jake Spurlock",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/whyisjake/debug-bar-post-meta/issues"
+  },
+  "homepage": "https://github.com/whyisjake/debug-bar-post-meta#readme"
+}
