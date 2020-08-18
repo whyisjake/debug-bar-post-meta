@@ -42,9 +42,9 @@ class Debug_Bar_Post_Meta extends Debug_Bar_Panel {
 					$vals    = '';
 					foreach ( $values as $value ) :
 						if ( ( is_serialized( $value ) ) !== false ) {
-							$vals .= print_r( unserialize( $value ), true );
+							$vals .= print_r( unserialize( $value ), true ); // phpcs:ignore
 						} else {
-							$vals .= print_r( $value, true );
+							$vals .= print_r( $value, true ); // phpcs:ignore
 						}
 					endforeach;
 
