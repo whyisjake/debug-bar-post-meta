@@ -31,5 +31,5 @@ This plugin will show you what post meta is attached to the main post.
 = 0.5.7 =
 * Add a script handler for Grunt.
 
-= 0.5.7 =
+= 0.5.8 =
 * Clean up some warnings.
