@@ -25,5 +25,5 @@ This plugin will show you what post meta is attached to the main post.
 ### 0.5 ###
 * Let's get this going...
 
-### 0.5.5 ###
+### 0.5.6 ###
 * Code update, overhaul.

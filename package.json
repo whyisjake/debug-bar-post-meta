@@ -1,6 +1,6 @@
 {
   "name": "debug-bar-post-meta",
-  "version": "0.5.5",
+  "version": "65",
   "description": "Adds a post meta panel for displaying all of the post meta.",
   "main": "index.js",
   "dependencies": {
