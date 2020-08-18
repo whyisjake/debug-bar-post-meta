@@ -65,6 +65,6 @@ class Debug_Bar_Post_Meta extends Debug_Bar_Panel {
 	 * Add the custom CSS
 	 */
 	public function enqueue() {
-		wp_enqueue_style( 'debug-bar-post-meta-css', plugins_url( 'css/debug-bar-post-meta.css', __FILE__ ), array(), '0.5.7' );
+		wp_enqueue_style( 'debug-bar-post-meta-css', plugins_url( 'css/debug-bar-post-meta.css', __FILE__ ), array(), '0.5.8' );
 	}
 }

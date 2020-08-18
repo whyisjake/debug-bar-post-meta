@@ -5,7 +5,7 @@
  * Add debug information from post meta to the Debug Bar
  *
  * @package Debug_Bar_Post_Meta
- * @version 0.5.7
+ * @version 0.5.8
  */
 
 /*
@@ -13,7 +13,7 @@ Plugin Name: Debug Bar Post Meta
 Plugin URI: http://wordpress.org/extend/plugins/debug-bar-template-trace/
 Description: Displays all of the post meta for a post.
 Author: whyisjake
-Version: 0.5.7
+Version: 0.5.8
 Author URI: http://www.jakespurlock.com/
 */
 
