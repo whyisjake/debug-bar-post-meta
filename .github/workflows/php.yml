@@ -12,7 +12,7 @@ jobs:
     - name: Build # Remove or modify this step as needed
       run: |
         npm install
-        npm run start
+        npm run grunt
         composer install
         composer format
         composer lint

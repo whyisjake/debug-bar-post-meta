@@ -2,7 +2,7 @@
 Contributors: whyisjake
 Tags: debug, template, trace
 Requires at least: 3.4
-Tested up to: 4.9.8
+Tested up to: 5.5
 
 Adds a post meta panel for displaying all of the post meta.
 
@@ -25,5 +25,5 @@ This plugin will show you what post meta is attached to the main post.
 = 0.5 =
 * Let's get this going...
 
-= 0.5 =
-* Initial version
+= 0.5.5 =
+* Code update, overhaul.

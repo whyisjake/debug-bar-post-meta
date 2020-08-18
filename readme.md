@@ -1,21 +1,29 @@
-# Debug Bar Post Meta
+# Debug Bar Post Meta #
+**Contributors:** [whyisjake](https://profiles.wordpress.org/whyisjake)  
+**Tags:** debug, template, trace  
+**Requires at least:** 3.4  
+**Tested up to:** 5.5  
 
 Adds a post meta panel for displaying all of the post meta.
 
-## Description
+## Description ##
 
 This plugin will show you what post meta is attached to the main post.
 
-## Installation
+## Installation ##
 
 1. Download and activate the Debug Bar plugin
 2. Download and activate the Debug Bar Post Meta plugin
 3. ...Profit?
 
-## Screenshots
+## Screenshots ##
 
-![Post Meta Sample](https://raw.github.com/whyisjake/Debug-Bar-Post-Meta/master/screenshot-1.png "Post Meta Sample")
+1. Sample of post meta.
 
-## Changelog
+## Changelog ##
 
-* 0.5 -Let's get this going...
+### 0.5 ###
+* Let's get this going...
+
+### 0.5.5 ###
+* Code update, overhaul.
